@@ -1,0 +1,47 @@
+/////////////////
+/////section/////
+/////////////////
+@media screen and (max-width: 768px) {
+  nav ul.nav-list {
+    width: 100%;
+  }
+  .main-box-inner {
+    flex-direction: column;
+    > div {
+      margin: 3rem 0;
+    }
+    .main-infor {
+      padding: 0 !important;
+      span {
+        text-align: center;
+        font-size: 2rem !important;
+        word-break: keep-all;
+      }
+    }
+  }
+  .information {
+    flex-direction: column;
+    .left-box,
+    .right-box {
+      width: 100%;
+    }
+    .left-box {
+      .text-box {
+        padding: 0 2rem;
+        width: 100%;
+        hr {
+          width: 100%;
+        }
+      }
+    }
+    .logo-big {
+      width: 100% !important;
+    }
+  }
+  .forum-box .hk-banner {
+    background-size: 100%;
+  }
+  .lv-leaderboard-container .row {
+    width: 100%;
+  }
+}

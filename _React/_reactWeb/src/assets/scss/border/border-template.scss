@@ -1,0 +1,154 @@
+.notice-title {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.table {
+  width: 80rem;
+  display: table;
+  margin: 0 auto;
+
+  .row {
+    width: 100% !important;
+    display: table-row;
+    background: #fff;
+
+    &.header .cell {
+      text-align: center;
+      color: #333333;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-weight: 500;
+      padding: 1.2rem 0 1.2rem 0;
+      background: #efebef;
+      &:nth-child(1) {
+        width: 70%;
+      }
+    }
+
+    &.header.border .cell {
+      border-top: .2rem solid #742b86;
+      border-bottom: .1rem solid #742b86;
+    }
+  }
+
+  .cell {
+    display: table-cell;
+    font-size: 1.2rem;
+    color: #606060;
+    line-height: 1.5;
+    font-weight: 500;
+    padding: 1.8rem 0 1.8rem 0;
+    border-bottom: .1rem solid #f2f2f2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    &.title {
+      color: #000000;
+    }
+    &.writer,
+    &.views,
+    &.date-created {
+      color: gray;
+    }
+  }
+
+  .row.title .cell {
+    text-align: left;
+    color: #333333;
+    font-size: 1.8rem;
+    line-height: 1.7;
+    font-weight: 500;
+    padding: 2.8rem 0 2.8rem 2rem !important;
+
+    span.desc {
+      display: block;
+      font-size: 1.3rem;
+      color: #606060;
+      padding: .2rem 0 0 0;
+      font-weight: 400;
+    }
+  }
+
+  .row.content .cell {
+    text-align: left;
+    color: #333333;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    font-weight: 500;
+    min-height: 40rem;
+    padding: 2.8rem 0 12.8rem 2rem !important;
+  }
+
+  .row.header .cell.left,
+  .cell.left {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .table {
+    display: inline-table;
+
+    .row {
+      display: block;
+    }
+
+    .row.header {
+      padding: 0;
+      height: 0;
+    }
+
+    .row.header .cell {
+      display: none;
+    }
+
+    .row .cell:before {
+      font-size: 1.2rem;
+      color: #808080;
+      line-height: 1.2;
+      font-weight: 500;
+      margin-bottom: 1.3rem;
+      content: attr(data-title);
+      min-width: 9.8rem;
+      display: block;
+    }
+
+    .row {
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 1.8rem;
+      padding-top: 3rem;
+      padding-right: 1.5rem;
+      margin: 0;
+    }
+
+    .row .cell {
+      font-size: 1.8rem;
+      color: #555555;
+      line-height: 1.2;
+      font-weight: 600;
+      border: none;
+      padding-left: 3rem !important;
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+      height: auto;
+      display: block;
+      text-align: left;
+    }
+
+    .row .cell:nth-child(1) {
+      padding-left: 3rem;
+    }
+
+    .row .cell:last-child {
+      border-bottom: .1rem solid #efebef;
+    }
+
+    .row, .cell {
+      width: 100% !important;
+    }
+  }
+}

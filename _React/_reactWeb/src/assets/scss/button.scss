@@ -1,0 +1,80 @@
+.btn-nb {
+  color: black;
+  cursor: pointer;
+  // display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  //text-transform: uppercase;
+  width: 100%;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-start {
+  background: none;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+}
+
+.btn-link {
+  letter-spacing: 0;
+  text-align: center !important;
+}
+
+.btn-link:hover,
+.btn-link:active {
+  letter-spacing: 5px;
+  transition: all .5s;
+  //width: auto;
+}
+
+.btn-link:after,
+.btn-link:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#ffffff, 0);
+  bottom: 0;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-link:hover:after,
+.btn-link:hover:before {
+  backface-visibility: hidden;
+  border-color: #ffffff;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn-link:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+.intro-box {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.intro-box {
+  //transition: 1s;
+  animation: skewX;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.intro-box label {
+  animation: clickBtn;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  font-size: 2rem;
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}

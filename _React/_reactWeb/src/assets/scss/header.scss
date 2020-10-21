@@ -1,26 +1,36 @@
 header {
-  //display: block;
-  height: 5rem;
-
-  .header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8rem;
+  font-size: 2.5rem;
+  background: rgba(#000000, .6);
+  color: white;
+  backdrop-filter: blur(5px);
+  z-index: 98;
+  > div {
+    //width: 20rem;
+    height: 100%;
+    margin: 0 2.5rem;
+  }
+  .h-left-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+  }
+  .h-right-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    .logo-box {
-      margin-left: 5rem;
-    }
-    .infor-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 5rem;
-      li {
-        margin: 0 5rem;
-        a {
-          font-size: 2rem;
-        }
-      }
+    .icon-menu {
+      display: block;
+      width: 5rem;
+      height: 5rem;
+      background: url("../images/icon-gnb-white.png");
+      background-size: 4rem;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
   }
 }
