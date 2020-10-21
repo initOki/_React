@@ -1,0 +1,26 @@
+header {
+  //display: block;
+  height: 5rem;
+
+  .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    .logo-box {
+      margin-left: 5rem;
+    }
+    .infor-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5rem;
+      li {
+        margin: 0 5rem;
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
